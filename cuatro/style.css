@@ -1,0 +1,41 @@
+body {
+    background-color: #faf0ca;
+}
+
+.label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:200px;
+    height: 100px;
+    background-color: #0d3b66;
+    border-radius: 100px;
+}
+
+.button {
+    margin: 10px 10px;
+    width: 40%;
+    aspect-ratio: 1;
+    background-color: #f4d35e;
+    border-radius: 50%;
+    border: none;
+}
+
+
+.button:focus { 
+    background-color: #1e1e24; 
+    transition-duration: 0.5s;
+    transform: translate(100px);
+} 
+
+.label:focus-within {
+    background-color: #fff8f0;
+    transition-duration: 0.5s;
+}
+
+body:focus-within {
+    background-color: #92140c;
+    transition-duration: 0.5s;
+}
+
